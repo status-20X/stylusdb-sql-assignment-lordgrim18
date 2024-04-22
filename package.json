@@ -1,5 +1,5 @@
 {
-  "name": "stylusdb-sql",
+  "name": "stylusdb-sql-lordgrim",
   "version": "0.1.6",
   "description": "A minimal SQL based DB based on CSV files. For educational purposes only.",
   "main": "./src/index.js",
@@ -36,7 +36,7 @@
     "stylusdb-cli": "node ./src/cli.js"
   },
   "keywords": [],
-  "author": "Chakshu Gautam",
+  "author": "Chakshu Gautam, Jerom Jo Manthara",
   "license": "ISC",
   "devDependencies": {
     "csv-parser": "^3.0.0",
