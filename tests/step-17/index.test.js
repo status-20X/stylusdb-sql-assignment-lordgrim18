@@ -1,6 +1,6 @@
-const {readCSV} = require('../../src/csvReader');
-const {executeSELECTQuery } = require('../../src/index');
-const { parseJoinClause, parseSelectQuery } = require('../../src/queryParser');
+const { readCSV } = require('../../src/csvStorage');
+const { parseSelectQuery, parseJoinClause } = require('../../src/queryParser');
+const { executeSELECTQuery } = require('../../src/queryExecutor');
 
 test('Read CSV File', async () => {
     const data = await readCSV('./student.csv');
@@ -674,7 +674,6 @@ test('Parse GROUP BY query with JOIN and WHERE clauses', () => {
         isDistinct: false,
     });
 });
-
 test('Execute SQL Query with ORDER BY', async () => {
     const query = 'SELECT name FROM student ORDER BY name ASC';
     const result = await executeSELECTQuery(query);
