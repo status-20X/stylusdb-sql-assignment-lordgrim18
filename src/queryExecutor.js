@@ -1,5 +1,5 @@
 const { parseSelectQuery, parseInsertQuery, parseDeleteQuery } = require('./queryParser');
-const { readCSV, writeCSV } = require('./csvReader');
+const { readCSV, writeCSV } = require('./csvStorage');
 
 function performInnerJoin(data, joinData, joinCondition, fields, table) {
     return data.flatMap(mainRow => {

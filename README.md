@@ -50,7 +50,7 @@ const result = await executeSELECTQuery(query);
 #### INSERT
 ```javascript
 const { executeINSERTQuery } = require('../src/queryExecuter');
-const { readCSV, writeCSV } = require('../src/csvReader');
+const { readCSV, writeCSV } = require('../src/csvStorage');
 async function createGradesCSV() {
     const initialData = [
         { student_id: '1', course: 'Mathematics', grade: 'A' },
